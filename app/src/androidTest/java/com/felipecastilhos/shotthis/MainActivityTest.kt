@@ -13,6 +13,9 @@ class MainActivityTest: ScreenshotTest {
     @Test
     fun theActivityIsShownProperly() {
         val firstFragment = startActivity()
+        firstFragment?.let {
+            compareScreenshot(firstFragment)
+        }
     }
 
     private fun startActivity(): MainActivity? {
