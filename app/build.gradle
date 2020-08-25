@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.facebook.testing.screenshot'
 apply plugin: 'shot'
 
 android {
@@ -45,8 +46,6 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
 
     testImplementation 'junit:junit:4.12'
-    //preciso msm do roboeletric?
-    testImplementation 'org.robolectric:robolectric:4.0'
 
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation('com.android.support.test.espresso:espresso-intents:3.0.2')
