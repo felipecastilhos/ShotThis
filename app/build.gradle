@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.facebook.testing.screenshot'
 apply plugin: 'shot'
 
 android {
@@ -14,9 +13,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        testApplicationId "com.felipecastilhos.shotthis.testId"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunner "com.karumi.shot.ShotTestRunner"
     }
 

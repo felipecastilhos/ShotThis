@@ -13,12 +13,11 @@ class MainActivityTest: ScreenshotTest {
     @Test
     fun theActivityIsShownProperly() {
         val firstFragment = startActivity()
-        firstFragment?.let {
-            compareScreenshot(firstFragment)
-        }
+
+        compareScreenshot(firstFragment)
     }
 
-    private fun startActivity(): MainActivity? {
+    private fun startActivity(): MainActivity {
         return activityRule.launchActivity(null)
     }
 }
